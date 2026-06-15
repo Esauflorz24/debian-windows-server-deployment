@@ -29,7 +29,7 @@ The architecture is built with a strong focus on high availability, data redunda
 *   **FTP Access Control:** Configured `vsftpd` to disable anonymous access, restricting FTP login to authorized local users with explicit read/write permissions mapped to the RAID 1 mount point.
 
 ## Proof of Concept & Testing
-The deployment was validated using a Windows 10 client machine within the same virtual network[cite: 1]. Successful test cases included:
+The deployment was validated using a Windows 10 client machine within the same virtual network. Successful test cases included:
 1.  Dynamic IP allocation and DNS suffix assignment via DHCP (`ipconfig /renew`).
 2.  Successful hostname resolution via ICMP (`ping www.hybridnetwork.com`).
 3.  Authenticated read/write file transfers via FTP to the RAID array.
